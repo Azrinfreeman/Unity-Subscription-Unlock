@@ -67,7 +67,7 @@ Build Settings enable `Assets/Scenes/LogMasuk.unity` first, then `Assets/Scenes/
 1. Clone the source:
 
    ```sh
-   git clone https://github.com/Azrinfreeman/SubscriptionSystemUnity.git
+   git clone https://github.com/Azrinfreeman/Unity-Subscription-Unlock.git
    ```
 
 2. Add the repository root to Unity Hub and open it with **2022.3.14f1**. Let Unity restore packages and import assets.
