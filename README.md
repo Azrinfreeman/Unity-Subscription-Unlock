@@ -1,10 +1,19 @@
-# Unity Subscription System
+# Unity Subscription Unlock
 
-**A Unity client template for account registration, login, and subscription management, with hosted Stripe-related payment pages opened through GPM WebView.**
+**A payment-integration prototype intended to unlock selected parts of a Unity game through a subscription.**
 
-This earlier integration project connects a Malay account interface to an external PHP service. It demonstrates the client side of an account/subscription workflow: submitting forms, displaying server responses, caching account details, refreshing subscription status, and opening hosted plan-management pages.
+The goal is to keep selected game content locked until the player subscribes. This earlier integration project provides the account and subscription client: a Malay interface connected to an external PHP service, with hosted Stripe-related payment pages opened through GPM WebView. It demonstrates submitting forms, displaying server responses, caching account details, refreshing subscription status, and opening hosted plan-management pages.
 
 **Scope:** this repository contains the Unity client and bundled plugins. The PHP backend, database schema, hosted payment pages, and payment-provider configuration are not included. The source baseline reviewed here was committed in August 2024. Runtime and payment behavior were not tested for this documentation update; see [validation status](docs/VALIDATION.md).
+
+## Intended game integration
+
+1. The player encounters a locked part of the host game.
+2. The player registers or signs in, then chooses a subscription through the hosted payment page.
+3. The backend confirms subscription status, and the Unity client refreshes that result.
+4. The host game uses the verified subscription result to decide which content to unlock.
+
+The reviewed source provides account screens, hosted-page access, and subscription-status retrieval. This review has not established a working locked-content scene or a complete entitlement gate. Integrating and testing that gate in the host game remains part of fulfilling the project goal.
 
 ## Features represented in the source
 

@@ -3,6 +3,8 @@
 Review date: **6 October 2026**, Asia/Kuala_Lumpur.
 Source baseline: `24104d7f66dd81b0d1737e6ec4fe89f3f099818e` (7 August 2024).
 
+The owner clarified the project goal on 6 October: integrate subscription payments into a Unity game so selected parts stay locked until the player subscribes. The README now uses the proposed project name **Unity Subscription Unlock** and documents that intended workflow. The GitHub repository name remains `SubscriptionSystemUnity` pending owner approval of a rename. Account/status UI was inspected; no complete host-game entitlement gate or locked-content demo was verified. This clarification changes documentation only.
+
 ## Checked for this update
 
 - Unity and package versions against `ProjectSettings/ProjectVersion.txt` and `Packages/manifest.json`.
